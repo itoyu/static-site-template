@@ -1,0 +1,52 @@
+
+/* ==========================================================================
+   vendor
+  ========================================================================== */
+
+/* swiper */
+.swiper-container {
+  box-sizing: content-box;
+
+  @include mq(pc) {
+    padding: 45px 0 20px;
+    min-height: 51vh;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow-y: visible;
+  }
+  @include mq(sp) {
+    padding: 30px 0 30px;
+    overflow: visible;
+  }
+
+  .swiper-wrapper {
+    @include mq(pc) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 50%;
+    width: 112px;
+    height: 6px;
+    margin-top: 5px;
+    padding: 20px;
+    box-sizing: content-box;
+    background: none;
+
+    @include mq(sp) {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 14%;
+    &:hover { margin-left: -20px; }
+  }
+  .swiper-button-next {
+    right: 14%;
+    &:hover { margin-right: -20px; }
+  }
+}

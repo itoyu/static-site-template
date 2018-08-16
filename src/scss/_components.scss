@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Parts
+  ========================================================================== */
+
+
+/* title */
+.hd {
+  @include mq(pc) {
+    font-size: 30px;
+  }
+  @include mq(sp) {
+    font-size: 20px;
+  }
+}
+
+/* loading */
+.more {
+  display: block;
+  text-align: center;
+
+  &_loading {
+    animation: loading 1s infinite;
+  }
+}

@@ -1,0 +1,37 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible" content="IE=edge")
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+meta(name="format-detection" content="telephone=no")
+if pageTitle
+  title #{pageTitle} | #{site.jp.info.name}
+else
+  title #{site.jp.info.name}
+meta(name="description" content=pageDescription)
+
+block css
+  link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700")
+  link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css")
+  link(rel="stylesheet" href="/assets/css/style.min.css")
+
+//- OGP
+if pageOgpTitle
+  meta(property="og:title" content=pageOgpTitle + ' | ' + site.jp.info.name)
+else
+  meta(property="og:title" content=site.jp.info.name)
+meta(property="og:type" content="website")
+meta(property="og:image" content=pageOgpImage)
+meta(property="og:url" content=site.jp.info.rootUrl + pageUrl)
+meta(property="og:description" content=pageDescription)
+meta(property="og:site_name" content=site.jp.info.name)
+
+//- OGP Facebook insights
+meta(property="fb:admins" content="")
+meta(property="fb:app_id" content="")
+//- /OGP Facebook insights
+
+//- OGP Twitter Cards
+meta(name="twitter:card" content="summary")
+meta(name="twitter:site" content="@")
+//- /OGP Twitter Cards
+
+//- /OGP

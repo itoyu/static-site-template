@@ -1,0 +1,20 @@
+
+/* ==========================================================================
+   pages: Index
+   ========================================================================== */
+
+body.index {
+
+}
+
+#dummyCener {
+  position: fixed;
+  display: block;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  height: 100vh;
+  background: #f00;
+  margin-left: 1px;
+  z-index: 999;
+}

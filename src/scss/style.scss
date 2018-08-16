@@ -1,0 +1,53 @@
+  /*
+  Theme Name: kiokjp
+  Theme URI: http://www.kiokjapan.jp/
+  Author: KAJIL
+  Author URI: https://kajil.co/
+  Description:
+  Version: 1.0.0
+  License:
+  License URI:
+  Text Domain:
+*/
+
+/*
+  Stylesheet Header ...
+*/
+
+/*--------------------
+>>> TABLE OF CONTENTS:
+----------------------
+0.0 Vendor
+1.0 Reset
+2.0 Vars
+3.0 Frame
+4.0 Parts
+5.0 Pages
+6.0 Popup
+--------------------*/
+
+/*----- 0.0 Vendor -----*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/*----- 1.0 Reset -----*/
+@import 'reset';
+
+/*----- 2.0 Library & Fonts -----*/
+@import 'lib';
+@import 'fonts';
+
+/*----- 3.0 Header & Footer -----*/
+@import 'header';
+@import 'footer';
+@import 'frame';
+
+/*----- 4.0 Components -----*/
+@import 'components';
+@import 'vendor';
+@import 'anime';
+
+/*----- 5.0 Pages Components -----*/
+@import 'page/*';
+
+/*----- 6.0 Popup pages -----*/
+@import 'popup';

@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Footer
+  ========================================================================== */
+
+/* pagetop */
+#pagetop {
+
+}
+
+footer.global {
+  position: relative;
+  
+  .copyright {
+
+    @include mq(pc) {
+      font-size: 10px;
+    }
+    @include mq(sp) {
+      font-size: 9px;
+    }
+  }
+}

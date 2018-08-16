@@ -1,0 +1,21 @@
+extend ./_extends/_layout
+append variables
+  //- Required
+  - var pageClass= "index";
+  - var pageTitle= "";
+  - var pageDescription= site.jp.info.description;
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= site.jp.info.ogpImage
+  //- Not modified
+  - var pageUrl= relativePath;
+
+block content
+  
+  div#dummyCener 
+
+  section.main
+    h1 Index Page
+    p.txt
+      a.link(href="./news")
+        | news

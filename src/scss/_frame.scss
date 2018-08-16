@@ -1,0 +1,62 @@
+/* ==========================================================================
+   frame
+  ========================================================================== */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+body {
+  background: #efefef;
+  // letter-spacing: .1em;
+  -webkit-font-smoothing: antialiased;
+  font-family: $fs_def;
+  font-size: 13px;
+  @include mq(sp) {
+    font-size: 12px;
+  }
+}
+
+#wrap {
+  opacity: 0;
+  overflow: hidden;
+  transition: 1s $Base;
+
+  @include mq(pc) {
+    padding-top: 190px;
+  }
+  @include mq(sp) {
+    padding-top: 90px;
+    overflow-x: hidden;
+  }
+  &.ready {
+    opacity: 1;
+  }
+}
+
+
+.in {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 2000px;
+  height: 100%;
+  z-index: 2;
+
+  &_1028 {
+    @include mq(pc) {
+      max-width: 1028px;
+    }
+    @include mq(sp) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+}
